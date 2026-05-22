@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_printf_str.c                                   :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/05/22 17:53:45 by username         #+#    #+#              */
+/*   Updated: 2026/05/22 17:53:45 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-int ft_printf_str(char *str)
+int	ft_printf_str(char *str)
 {
-	int i;
+	int	i;
 
 	if (!str)
 		return (ft_printf_str("(null)"));
 	i = 0;
-	while(str[i])
+	while (str[i])
 	{
 		write(1, &str[i], 1);
 		i++;

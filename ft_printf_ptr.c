@@ -56,3 +56,12 @@ int ft_printf_ptr(void *ptr)
 //     ft_printf(" %p ", (void *)LONG_MAX);
 //     printf("\n");
 // }
+
+// #include <stdio.h>
+
+// int main()
+// {
+// 	ft_printf("%p %p", 0, 0);
+// 	char *str = "hi";
+// 	printf(" %p %p", 0, 0);
+// }
