@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/05/22 15:20:15 by username         #+#    #+#              */
-/*   Updated: 2026/05/22 17:54:02 by username        ###   ########.fr        */
+/*   Updated: 2026/05/23 21:00:32 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,10 +60,11 @@ int	ft_printf(const char *format, ...)
 }
 // #include <stdio.h>
 
-//  int main()
-//  {
+// int	main(void)
+// {
 // 	ft_printf("%");
 // 	printf("%");
-// 	char *str = "this project failed";
-// 	return 0;
-//  }
+// 	char	*str = "this project failed";
+
+// 	return (0);
+// }

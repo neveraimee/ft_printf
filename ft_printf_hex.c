@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_printf_hex.c                                   :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/05/23 20:55:41 by username         #+#    #+#              */
+/*   Updated: 2026/05/23 20:55:41 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-int ft_printf_hex(unsigned long nbr, char format)
+int	ft_printf_hex(unsigned long nbr, char format)
 {
-	char *base;
-	char digit;
-	int count;
+	char	*base;
+	char	digit;
+	int		count;
 
 	base = "0123456789abcdef";
 	if (format == 'X')
