@@ -1,8 +1,0 @@
-#all executable files
-a.out
-#lib files
-libftprintf.a
-#object files
-*.o
-#DS store
-.DS_Store

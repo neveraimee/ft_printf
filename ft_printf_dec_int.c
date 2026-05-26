@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf_dec_int.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aimdoyle <aimdoyle@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/25 17:27:12 by aimdoyle          #+#    #+#             */
+/*   Updated: 2026/05/25 17:34:12 by aimdoyle         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-int ft_printf_dec_int(int n)
+int	ft_printf_dec_int(int n)
 {
-	int count;
-	int digit;
-	long nbr;
+	int		count;
+	int		digit;
+	long	nbr;
 
 	nbr = n;
 	count = 0;
@@ -30,4 +42,4 @@ int ft_printf_dec_int(int n)
 // 	ft = ft_printf("str: %d\n", -2147483647);
 //     og = printf("str: %d\n", -2147483647);
 //     printf("ft: %d | og: %d\n", ft, og);
-// }
+// } 

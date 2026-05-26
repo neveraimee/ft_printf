@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_printf_ptr.c                                   :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/05/22 20:38:23 by username         #+#    #+#              */
-/*   Updated: 2026/05/23 21:19:31 by username        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_printf_ptr.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aimdoyle <aimdoyle@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/25 17:27:35 by aimdoyle          #+#    #+#             */
+/*   Updated: 2026/05/25 17:35:06 by aimdoyle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf_hex(unsigned long nbr, char format);
-
 int	ft_printf_ptr(void *ptr)
 {
-	int	count;
+	int				count;
+	unsigned long	p;
 
+	if (!ptr)
+		return (ft_printf_str("(nil)"));
 	write(1, "0x", 2);
-	count = ft_printf_hex((unsigned long) ptr, 'x');
+	p = (unsigned long)ptr;
+	count = ft_printf_hex((unsigned long) p, 'x');
 	return (count + 2);
 }
 // #include <stdio.h>
@@ -38,32 +40,6 @@ int	ft_printf_ptr(void *ptr)
 // 	og = printf("%p\n", NULL);
 // 	ft_printf(" %p %p ", (void *) 0, (void *) 0);
 // 	printf(" %p %p ", (void *) 0, (void *) 0);
-// }
-// #include <stdio.h>
-// #include <limits.h>
-// int	main(void)
-// {
-// 	printf("og: ");
-// 	printf(" %p %p ", (void *) LONG_MIN, (void *) LONG_MAX);
-// 	printf("\n");
-// 	printf("ft: ");
-// 	ft_printf(" %p %p ", (void *) LONG_MIN, (void *) LONG_MAX);
-// 	printf("\n\n");
-// 	printf("og: ");
-// 	printf(" %p %p ", (void *) ULONG_MAX, (void *) - ULONG_MAX);
-// 	printf("\n");
-// 	printf("ft: ");
-// 	ft_printf(" %p %p ", (void *) ULONG_MAX, (void *) - ULONG_MAX);
-// 	printf("\n\n");
-// }
-// #include <stdio.h>
-// #include <limits.h>
-// int main(void)
-// {
-//     printf(" %p ", (void *)LONG_MAX);
-//     printf("\n");
-//     ft_printf(" %p ", (void *)LONG_MAX);
-//     printf("\n");
 // }
 // #include <stdio.h>
 // int main()

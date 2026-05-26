@@ -1,10 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf_u.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aimdoyle <aimdoyle@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/25 17:27:53 by aimdoyle          #+#    #+#             */
+/*   Updated: 2026/05/25 17:29:19 by aimdoyle         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-int ft_printf_u(unsigned int n)
+int	ft_printf_u(unsigned int n)
 {
-	int count;
-	int digit;
-
+	int	count;
+	int	digit;
 
 	count = 0;
 	if (n >= 10)
